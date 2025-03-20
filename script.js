@@ -74,7 +74,18 @@ document.addEventListener("DOMContentLoaded", function () {
             "¡Gracias por amarme 💕(está repetido sí, pero no es un error)!",
             "¡Gracias por dejar que yo te ame!",
             "¡Gracias por ir a playa conmigo!🌟",
+            "Gracias por presentarme y hablarle de mí a tus amigos",
+            "Gracias por no odiarme con todas mis imprudencias",
+            "Gracias por escucharme, es de las cosas que más amo de ti",
+            "Gracias por tomarte el tiempo de encender tu computador para ver esta página, espero sea de tu agrado",
+            "Gracias por creer en mí, siento que me tienes mucha fe",
+            "Gracias por leerme",
+            "Gracias por tenerme paciencia (sé que soy de mucha paciencia)",
+            "¡Gracias por ser tan hermosa! (A ti y a chuchito lindo)",
+            "¡Gracias por ser tú!",
+            "Estoy enamorado de ti💕",
             "¡Gracias!",
+            
         ];
         let index = 0;
 
