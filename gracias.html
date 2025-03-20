@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Gracias!</title>
+    <style>
+        body {
+            background-image: url('images/gracias.jpg');
+            /* Asegúrate de que la imagen esté en 'images/' */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            backdrop-filter: blur(5px);
+        }
+
+        /* Estilos para el mensaje */
+        #mensaje {
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.7);
+            /* Fondo negro semi-transparente */
+            color: white;
+            /* Texto blanco */
+            font-size: 2rem;
+            /* Tamaño del texto */
+            font-weight: bold;
+            /* Texto en negrita */
+            padding: 10px 20px;
+            /* Espaciado */
+            border-radius: 10px;
+            /* Bordes redondeados */
+            text-align: center;
+            /* Alinear texto */
+            cursor: pointer;
+            /* Hacer que el texto parezca interactivo */
+            transition: all 0.5s ease-in-out;
+            /* Animación suave */
+        }
+    </style>
+</head>
+
+<body>
+    <div id="mensaje">Tócame</div>
+
+    <script src="script.js" defer></script>
+</body>
+
+</html>
