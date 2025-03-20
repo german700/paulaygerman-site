@@ -1,3 +1,4 @@
+//C:\Users\germa\Desktop\paulaygerman-site\paulaygerman-site\script.js
 function login() {
     const username = document.getElementById("username").value;
     const password = document.getElementById("password").value;
