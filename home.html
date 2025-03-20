@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historia de Paula y Germán</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100">
+    <header class="bg-white shadow-md p-4 flex justify-between items-center">
+        <h1 class="text-2xl md:text-3xl font-bold text-blue-600">Paula & Germán</h1>
+        <button onclick="logout()" class="bg-red-500 text-white px-4 py-2 rounded-lg hover:bg-red-600 transition duration-300 transform hover:scale-105">
+            Cerrar Sesión
+        </button>
+    </header>
+
+    <main class="max-w-2xl mx-auto mt-10 p-6 bg-white shadow-lg rounded-lg">
+        <h2 class="text-xl md:text-2xl font-bold text-gray-700">Nuestra Historia</h2>
+
+        <!-- Índice Interactivo -->
+        <nav class="mt-6 space-y-2">
+            <button onclick="showSection('prologo')" class="w-full text-left text-blue-500 font-semibold hover:underline">Prólogo</button>
+            <button onclick="showSection('diamantes')" class="w-full text-left text-blue-500 font-semibold hover:underline">Diamantes (1° Mes)</button>
+            <button onclick="showSection('zafiros')" class="w-full text-left text-blue-500 font-semibold hover:underline">Zafiros (2° Mes)</button>
+            <button onclick="showSection('agatas')" class="w-full text-left text-blue-500 font-semibold hover:underline">Ágatas (3° Mes)</button>
+            <button onclick="showSection('peridots')" class="w-full text-left text-blue-500 font-semibold hover:underline">Peridots (4° Mes)</button>
+            <button onclick="showSection('lapizlazuli')" class="w-full text-left text-blue-500 font-semibold hover:underline">Lapizlazuli (5° Mes)</button>
+            <button onclick="showSection('rubi')" class="w-full text-left text-blue-500 font-semibold hover:underline">Rubí (6° Mes)</button>
+        </nav>
+
+        <!-- Secciones de la historia -->
+        <section id="prologo" class="hidden mt-6">
+            <h3 class="text-lg font-bold text-gray-700">Prólogo</h3>
+            <p class="mt-2 text-gray-600">Aquí comienza la historia de Paula y Germán...</p>
+            <img src="images/prologo.jpg" alt="Imagen del prólogo" class="mt-4 rounded-lg shadow-md w-full">
+        </section>
+
+        <section id="diamantes" class="hidden mt-6">
+            <h3 class="text-lg font-bold text-gray-700">Diamantes (1° Mes)</h3>
+            <p class="mt-2 text-gray-600">El primer mes fue un resplandor puro...</p>
+            <img src="images/diamantes.jpg" alt="Primer mes" class="mt-4 rounded-lg shadow-md w-full">
+        </section>
+
+        <section id="zafiros" class="hidden mt-6">
+            <h3 class="text-lg font-bold text-gray-700">Zafiros (2° Mes)</h3>
+            <p class="mt-2 text-gray-600">Un mes lleno de intensidad y fortaleza...</p>
+            <img src="images/zafiros.jpg" alt="Segundo mes" class="mt-4 rounded-lg shadow-md w-full">
+        </section>
+
+        <section id="agatas" class="hidden mt-6">
+            <h3 class="text-lg font-bold text-gray-700">Ágatas (3° Mes)</h3>
+            <p class="mt-2 text-gray-600">El mes donde descubrimos nuestra verdadera conexión...</p>
+            <img src="images/agatas.jpg" alt="Tercer mes" class="mt-4 rounded-lg shadow-md w-full">
+        </section>
+
+        <section id="peridots" class="hidden mt-6">
+            <h3 class="text-lg font-bold text-gray-700">Peridots (4° Mes)</h3>
+            <p class="mt-2 text-gray-600">Un mes de crecimiento y esperanza...</p>
+            <img src="images/peridots.jpg" alt="Cuarto mes" class="mt-4 rounded-lg shadow-md w-full">
+        </section>
+
+        <section id="lapizlazuli" class="hidden mt-6">
+            <h3 class="text-lg font-bold text-gray-700">Lapizlazuli (5° Mes)</h3>
+            <p class="mt-2 text-gray-600">Un azul profundo como nuestra confianza...</p>
+            <img src="images/lapizlazuli.jpg" alt="Quinto mes" class="mt-4 rounded-lg shadow-md w-full">
+        </section>
+
+        <section id="rubi" class="hidden mt-6">
+            <h3 class="text-lg font-bold text-gray-700">Rubí (6° Mes)</h3>
+            <p class="mt-2 text-gray-600">Un mes de pasión y amor intenso...</p>
+            <img src="images/rubi.jpg" alt="Sexto mes" class="mt-4 rounded-lg shadow-md w-full">
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+
+</html>
