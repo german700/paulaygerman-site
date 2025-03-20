@@ -1,67 +1,82 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Historia de Paula y Germán</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-</head>
-
 <body class="bg-gray-100">
-    <!-- Navegación superior -->
-    <header class="fixed top-0 left-0 w-full bg-white shadow-md p-4 flex justify-between items-center z-50">
-        <h1 class="text-2xl md:text-3xl font-bold text-blue-600">Paula & Germán</h1>
-        <button onclick="logout()" class="bg-red-500 text-white px-4 py-2 rounded-lg hover:bg-red-600 transition duration-300 transform hover:scale-105">
-            Cerrar Sesión
-        </button>
-    </header>
+    <!-- Navegación superior con índice -->
+    <header class="fixed top-0 left-0 w-full bg-black bg-opacity-50 text-white py-3 px-6 flex justify-between items-center z-50 backdrop-blur-md">
+        <h1 class="text-lg font-semibold">Nuestra Historia</h1>
+        <nav>
+          <ul class="flex space-x-6">
+            <li><a href="#prologo" class="hover:text-gray-300 transition">Prólogo</a></li>
+            <li><a href="#diamantes" class="hover:text-gray-300 transition">Diamantes</a></li>
+            <li><a href="#zafiros" class="hover:text-gray-300 transition">Zafiros</a></li>
+            <li><a href="#agatas" class="hover:text-gray-300 transition">Ágatas</a></li>
+            <li><a href="#peridots" class="hover:text-gray-300 transition">Peridots</a></li>
+            <li><a href="#lapizlazuli" class="hover:text-gray-300 transition">Lapizlazuli</a></li>
+            <li><a href="#rubi" class="hover:text-gray-300 transition">Rubí</a></li>
+          </ul>
+        </nav>
+      </header>
 
-    <!-- Secciones con scroll -->
+    <!-- Secciones con imágenes ajustadas -->
     <main class="w-full">
-        <section id="prologo" class="h-screen flex flex-col justify-center items-center text-center bg-cover bg-center bg-fixed text-white" style="background-image: url('images/prologo.jpg');">
+        <section id="prologo"
+            class="h-screen flex flex-col justify-center items-center text-center bg-cover bg-center bg-no-repeat text-white"
+            style="background-image: url('images/prologo.jpg');">
             <div class="bg-black bg-opacity-50 p-8 rounded-lg">
                 <h2 class="text-4xl font-bold">Prólogo</h2>
                 <p class="mt-4 text-lg">Aquí comienza la historia de Paula y Germán...</p>
             </div>
         </section>
 
-        <section id="diamantes" class="h-screen flex flex-col justify-center items-center text-center bg-cover bg-center bg-fixed text-white" style="background-image: url('images/diamantes.jpg');">
+        <section id="diamantes"
+            class="h-screen flex flex-col justify-center items-center text-center bg-cover bg-center bg-no-repeat text-white"
+            style="background-image: url('images/diamantes.jpg'); background-size: contain; background-color: #1E293B;">
             <div class="bg-black bg-opacity-50 p-8 rounded-lg">
                 <h2 class="text-4xl font-bold">Diamantes (1° Mes)</h2>
                 <p class="mt-4 text-lg">El primer mes fue un resplandor puro...</p>
             </div>
         </section>
 
-        <section id="zafiros" class="h-screen flex flex-col justify-center items-center text-center bg-cover bg-center bg-fixed text-white" style="background-image: url('images/zafiros.jpg');">
+        <section id="zafiros"
+            class="h-screen flex flex-col justify-center items-center text-center bg-cover bg-center bg-no-repeat text-white"
+            style="background-image: url('images/zafiros.jpg'); background-size: contain; background-color: #0F172A;">
             <div class="bg-black bg-opacity-50 p-8 rounded-lg">
                 <h2 class="text-4xl font-bold">Zafiros (2° Mes)</h2>
                 <p class="mt-4 text-lg">Un mes lleno de intensidad y fortaleza...</p>
             </div>
         </section>
 
-        <section id="agatas" class="h-screen flex flex-col justify-center items-center text-center bg-cover bg-center bg-fixed text-white" style="background-image: url('images/agatas.jpg');">
+        <section id="agatas"
+            class="h-screen flex flex-col justify-center items-center text-center bg-cover bg-center bg-no-repeat text-white"
+            style="background-image: url('images/agatas.jpg'); background-size: contain; background-color: #374151;">
             <div class="bg-black bg-opacity-50 p-8 rounded-lg">
                 <h2 class="text-4xl font-bold">Ágatas (3° Mes)</h2>
                 <p class="mt-4 text-lg">El mes donde descubrimos nuestra verdadera conexión...</p>
             </div>
         </section>
 
-        <section id="peridots" class="h-screen flex flex-col justify-center items-center text-center bg-cover bg-center bg-fixed text-white" style="background-image: url('images/peridots.jpg');">
+        <section id="peridots"
+            class="h-screen flex flex-col justify-center items-center text-center bg-cover bg-center bg-no-repeat text-white"
+            style="background-image: url('images/peridots.jpg'); background-size: contain; background-color: #1E3A8A;">
             <div class="bg-black bg-opacity-50 p-8 rounded-lg">
                 <h2 class="text-4xl font-bold">Peridots (4° Mes)</h2>
                 <p class="mt-4 text-lg">Un mes de crecimiento y esperanza...</p>
             </div>
         </section>
 
-        <section id="lapizlazuli" class="h-screen flex flex-col justify-center items-center text-center bg-cover bg-center bg-fixed text-white" style="background-image: url('images/lapizlazuli.jpg');">
+        <section id="lapizlazuli"
+            class="h-screen flex flex-col justify-center items-center text-center bg-cover bg-center bg-no-repeat text-white"
+            style="background-image: url('images/lapizlazuli.jpg'); background-size: contain; background-color: #4338CA;">
             <div class="bg-black bg-opacity-50 p-8 rounded-lg">
                 <h2 class="text-4xl font-bold">Lapizlazuli (5° Mes)</h2>
                 <p class="mt-4 text-lg">Un azul profundo como nuestra confianza...</p>
             </div>
         </section>
 
-        <section id="rubi" class="h-screen flex flex-col justify-center items-center text-center bg-cover bg-center bg-fixed text-white" style="background-image: url('images/rubi.jpg');">
+        <section id="rubi"
+            class="h-screen flex flex-col justify-center items-center text-center bg-cover bg-center bg-no-repeat text-white"
+            style="background-image: url('images/rubi.jpg'); background-size: contain; background-color: #9D174D;">
             <div class="bg-black bg-opacity-50 p-8 rounded-lg">
                 <h2 class="text-4xl font-bold">Rubí (6° Mes)</h2>
                 <p class="mt-4 text-lg">Un mes de pasión y amor intenso...</p>
