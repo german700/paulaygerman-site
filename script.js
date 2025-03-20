@@ -21,3 +21,22 @@ function showSection(sectionId) {
 
     document.getElementById(sectionId).classList.remove("hidden");
 }
+document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll("section").forEach(section => {
+        section.style.transition = "opacity 1s ease-in-out";
+    });
+
+    let sections = document.querySelectorAll("section");
+    window.addEventListener("scroll", () => {
+        let scrollPosition = window.scrollY + window.innerHeight / 2;
+        sections.forEach(section => {
+            let sectionTop = section.offsetTop;
+            let sectionBottom = sectionTop + section.offsetHeight;
+            if (scrollPosition > sectionTop && scrollPosition < sectionBottom) {
+                section.style.opacity = "1";
+            } else {
+                section.style.opacity = "0.3";
+            }
+        });
+    });
+});
