@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 section.style.opacity = "0.3";
             }
         });
-    });🤭
+    });
 });
 document.addEventListener("DOMContentLoaded", function () {
     const mensaje = document.getElementById("mensaje");
